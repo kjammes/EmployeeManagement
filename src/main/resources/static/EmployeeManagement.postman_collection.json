@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "b77e2954-9905-410c-8471-092421dff44c",
+		"name": "EmployeeManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11823318"
+	},
+	"item": [
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "CLIENT_ID",
+						"value": "{{CLIENT_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "CLIENT_SECRET",
+						"value": "{{CLIENT_SECRET}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Jayesh\",\r\n    \"lastName\":  \"Karli\",\r\n    \"email\"   :  \"j@g.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/create/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "CLIENT_ID",
+						"value": "{{CLIENT_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "CLIENT_SECRET",
+						"value": "{{CLIENT_SECRET}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/employee/all/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "CLIENT_ID",
+						"value": "{{CLIENT_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "CLIENT_SECRET",
+						"value": "{{CLIENT_SECRET}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/employee/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updating employee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "CLIENT_ID",
+						"value": "{{CLIENT_SECRET}}",
+						"type": "text"
+					},
+					{
+						"key": "CLIENT_SECRET",
+						"value": "{{CLIENT_SECRET}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Zaid\",\r\n    \"lastName\":  \"Athar\",\r\n    \"email\"   :  \"z@g.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete employee",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "CLIENT_ID",
+						"value": "{{CLIENT_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "CLIENT_SECRET",
+						"value": "{{CLIENT_SECRET}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/employee/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "CLIENT_ID",
+			"value": "kjbas98ascakcb"
+		},
+		{
+			"key": "CLIENT_SECRET",
+			"value": "asjbh12kj12b1k23b"
+		}
+	]
+}
